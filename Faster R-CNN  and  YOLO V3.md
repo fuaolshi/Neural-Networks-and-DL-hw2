@@ -1,5 +1,11 @@
 # Faster R-CNN  and  YOLO V3
 
+## 权重文件
+
+链接：https://pan.baidu.com/s/1fNdK7LiAIKFN2yX6jw-CVw?pwd=nv41 
+提取码：nv41 
+--来自百度网盘超级会员V7的分享
+
 ## 配置环境
 
 ```bash
