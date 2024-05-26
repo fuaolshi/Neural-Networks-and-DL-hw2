@@ -526,13 +526,13 @@ ps：跟几个朋友交流了一下，还是有可能我的预训练权重加载
 python work_dirs/cfm/yolov3/test.py
 ```
 
-![](双模型对比\boat person.jpg)
+![](双模型对比\boat_person.jpg)
 
-![](双模型对比\diningtable bottle sofa.jpg)
+![](双模型对比\diningtable_bottle_sofa.jpg)
 
-![](双模型对比\sheep horse.jpg)
+![](双模型对比\sheep_horse.jpg)
 
-![](双模型对比\car bus person.jpg)
+![](双模型对比\car_bus_person.jpg)
 
 结论：两者对比非常明显，faster-rcnn明显更加“激进”，而YOLOv3总体上更加“谨慎保守”；
 
