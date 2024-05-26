@@ -528,9 +528,9 @@ python work_dirs/cfm/yolov3/test.py
 
 ![](双模型对比\boat person.jpg)
 
-![diningtable bottle sofa](双模型对比\diningtable bottle sofa.jpg)
+![](双模型对比\diningtable bottle sofa.jpg)
 
-![sheep horse](双模型对比\sheep horse.jpg)
+![](双模型对比\sheep horse.jpg)
 
 ![](双模型对比\car bus person.jpg)
 
