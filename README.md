@@ -130,7 +130,7 @@ load_from = 'checkpoints/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth'
 
 - **dets (detections)**: 检测到的目标数，即模型检测到的每个类别的目标数量。
 
-- **recall**: 召回率，表示模型能够正确检测到的实际目标的比例。计算公式为 recall=TPTP+FNrecall=TP+FNTP，其中 TPTP 是真正例，FNFN 是假负例。
+- **recall**: 召回率，表示模型能够正确检测到的实际目标的比例。
   - **召回率最高的**类别是`dog`，达到 **0.975**，表明模型在检测dog目标时非常可靠，能够检测到几乎所有的实际目标。
   - **召回率较低**的类别是`bottle`，只有 **0.691**，表明模型在检测bottle目标时存在一定的漏检情况，可能需要进一步改进。
 
@@ -529,7 +529,7 @@ ps：跟几个朋友交流了一下，还是有可能我的预训练权重加载
 在网上随意选择三张图片，测试faster-RCNN和YOLO的对比效果
 
 ```bash
-python work_dirs/cfm/yolov3/test.py
+python work_dirs/test.py
 ```
 <img src="双模型对比\boat_person.jpg"  />
 
