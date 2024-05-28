@@ -245,7 +245,7 @@ python tools/analysis_tools/confusion_matrix.py configs/faster_rcnn/faster_rcnn_
 
 ### 数据集转化
 
-YOLO只能识别coco数据集，所以**将VOC数据集转化为coco数据集**，新建文件`voc_to_coco.py`，其中`val_files_num = 600,test_files_num = 600`，对VOC数据集进行转化。
+YOLO只能识别coco数据集，所以**将VOC数据集转化为coco数据集**，新建文件`voc_to_coco.py`，对VOC数据集进行转化。
 
 ### 训练阶段
 
@@ -436,55 +436,55 @@ writer.close()
 
 2. **grad_norm**梯度范数：从图中看出梯度范数稳定，说明模型在训练过程中未出现梯度爆炸或消失的情况。
 
-   ![](YOLO第四次训练\Tensorboard可视化\grad_norm.svg)
+   <img src="YOLO第四次训练\Tensorboard可视化\grad_norm.svg" />
 
 3. 损失函数
 
    1. **loss**总体损失：逐渐下降，表明模型在不断学习，收敛情况较好。
 
-      ![](YOLO第四次训练\Tensorboard可视化\loss.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\loss.svg" />
 
    2. **loss_cls**分类损失：整体下降，训练过程稳定，收敛效果好。
 
-      ![](YOLO第四次训练\Tensorboard可视化\loss_cls.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\loss_cls.svg" />
 
    3. **loss_conf**置信度损失：变化趋势和总体损失相似，收敛效果良好。
 
-      ![](YOLO第四次训练\Tensorboard可视化\loss_conf.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\loss_conf.svg" />
 
    4. **loss_wh**宽高损失：初期波动大，后期趋于稳定，表现良好。
 
-      ![](YOLO第四次训练\Tensorboard可视化\loss_wh.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\loss_wh.svg" />
 
    5. **loss_xy**中心点位置损失：整体波动较大，但总体呈下降趋势。
 
-      ![](YOLO第四次训练\Tensorboard可视化\loss_xy.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\loss_xy.svg" />
 
 4. COCO mAP指标
 
    1. **coco/bbox_mAP**总体mAP的变化：从图中可以看出mAP在前期波动较大，后期逐渐稳定在0.37左右
 
-      ![](YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP.svg" />
 
    2. **coco/bbox_mAP_50**IoU为0.5时的mAP：波动较大，但整体趋于稳定，最终值在0.57左右
 
-      ![](YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_50.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_50.svg" />
 
    3. **coco/bbox_mAP_75**IoU为0.75时的mAP：初期波动大，后期稳定在0.41左右
 
-      ![](YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_75.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_75.svg" />
 
    4. **coco/bbox_mAP_s**对小目标的mAP表现：波动较大且值较低，稳定在0.02左右
 
-      ![](YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_s.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_s.svg" />
 
    5. **coco/bbox_mAP_m**对中等目标的mAP表现：稳定在0.19左右
 
-      ![](YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_m.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_m.svg" />
 
    6. **coco/bbox_mAP_l**对大目标的mAP表现：趋于稳定，值在0.46左右
 
-      ![](YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_l.svg)
+      <img src="YOLO第四次训练\Tensorboard可视化\coco_bbox_mAP_l.svg" />
 
 #### 性能测试阶段
 
@@ -504,13 +504,13 @@ python tools/analysis_tools/analyze_results_copy.py configs/yolo/yolov3_d53_8xb8
 
 选取四张还不错的图片如下：
 
-![](YOLO测试集\bird1.jpg)
+<img src="YOLO测试集\bird1.jpg" />
 
-![chair1](YOLO测试集\chair1.jpg)
+<img src="YOLO测试集\chair1.jpg" />
 
-![cow](YOLO测试集\cow.jpg)
+<img src="YOLO测试集\cow.jpg" />
 
-![diningtable](YOLO测试集\diningtable.jpg)
+<img src="YOLO测试集\diningtable.jpg" />
 
 2. 画出混淆矩阵
 
