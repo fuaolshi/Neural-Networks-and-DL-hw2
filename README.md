@@ -171,7 +171,7 @@ plt.show()
 
 <img src="faster-cnn 第三次训练\Tensorboard可视化\pascal_voc_AP50.png" style="zoom:36%;" />
 
-<img src="C:\Users\shiwe\Desktop\期中作业\faster-cnn 第三次训练\Tensorboard可视化\pascal_voc_mAP.png" style="zoom:36%;" />
+<img src="faster-cnn 第三次训练\Tensorboard可视化\pascal_voc_mAP.png" style="zoom:36%;" />
 
 ##### 最后生成的目录文件：
 
